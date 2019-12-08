@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 def read_modules(path: str) -> list:
     lines = list()
     with open(path) as fs:
@@ -8,8 +12,8 @@ def read_modules(path: str) -> list:
     return lines
 
 
-def group(lst, n):
-    return zip(*[lst[i::n] for i in range(n)])
+def group(lsttogrp, n):
+    return zip(*[lsttogrp[i::n] for i in range(n)])
 
 
 if __name__ == "__main__":
