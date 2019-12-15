@@ -95,8 +95,8 @@ class Computer:
 
 if __name__ == "__main__":
 
-    with open("../input_9.txt") as _file:
-        for line in _file:
+    with open("../input_9.txt") as f:
+        for line in f:
             input_vals = [int(num) for num in line.split(",")]
             computer = Computer(input_vals)
             print(f"Part 1: {computer.calculate(1)}")
